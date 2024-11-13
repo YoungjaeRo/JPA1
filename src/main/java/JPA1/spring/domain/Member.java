@@ -26,6 +26,6 @@ public class Member {
 	private Address address;
 
 	@OneToMany(mappedBy = "member")
-	private List<Order> orders = new ArrayList<>();
+	private List<Order> orders = new ArrayList<>(); // 컬렉션은 이렇게 필드에서 초기화 해주는게 좋다
 
 }

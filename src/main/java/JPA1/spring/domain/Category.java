@@ -29,8 +29,8 @@ public class Category {
 	private List<Category> child = new ArrayList<>();
 
 
-	//==연관관계 메서드==//
-	public void addChildCategory(Category child) {
+	//==연관관계 메서드==// (다시 한번 말하지만, 양방향일때, 사용하면 좋음)
+	public void addChildCategory(Category child){
 		this.child.add(child);
 		child.setParent(this);
 	}
