@@ -22,7 +22,7 @@ import lombok.Setter;
 @Setter
 public abstract class Item {
 	@Id
-	@GeneratedValue
+	@GeneratedValue // id가 실제로 persist를 통해 영속성 컨텍스트에 포함되기 전까지는, id값을 할당하지 않음
 	@Column(name = "item_id")
 	private Long id;
 
